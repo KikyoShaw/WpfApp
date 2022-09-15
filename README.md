@@ -8,3 +8,6 @@
 
 #### WpfVerifyCode - 验证码控件
 ![image](https://github.com/KikyoShaw/WpfApp/blob/master/GIF/WpfVerifyCode.gif)
+
+#### WpfSongLrc - 歌词渐变滚动
+![image](https://github.com/KikyoShaw/WpfApp/blob/master/GIF/WpfSongLrc.gif)
