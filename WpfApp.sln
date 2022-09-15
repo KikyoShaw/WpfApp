@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfWaterEffect", "WpfWaterEffect\WpfWaterEffect.csproj", "{FD208F5A-E1A1-4024-9E36-5396926ADA83}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfWaterEffect", "WpfWaterEffect\WpfWaterEffect.csproj", "{FD208F5A-E1A1-4024-9E36-5396926ADA83}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfMoLayer", "WpfMoLayer\WpfMoLayer.csproj", "{B563BC4C-914D-4FC5-A979-9457CF99AA6F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{FD208F5A-E1A1-4024-9E36-5396926ADA83}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FD208F5A-E1A1-4024-9E36-5396926ADA83}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FD208F5A-E1A1-4024-9E36-5396926ADA83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B563BC4C-914D-4FC5-A979-9457CF99AA6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B563BC4C-914D-4FC5-A979-9457CF99AA6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B563BC4C-914D-4FC5-A979-9457CF99AA6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B563BC4C-914D-4FC5-A979-9457CF99AA6F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
