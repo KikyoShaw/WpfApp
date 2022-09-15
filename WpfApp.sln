@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfWaterEffect", "WpfWaterE
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfMoLayer", "WpfMoLayer\WpfMoLayer.csproj", "{B563BC4C-914D-4FC5-A979-9457CF99AA6F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfVerifyCode", "WpfVerifyCode\WpfVerifyCode.csproj", "{37136762-C1EF-4D06-999A-B57F4BDF91FE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{B563BC4C-914D-4FC5-A979-9457CF99AA6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B563BC4C-914D-4FC5-A979-9457CF99AA6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B563BC4C-914D-4FC5-A979-9457CF99AA6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37136762-C1EF-4D06-999A-B57F4BDF91FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37136762-C1EF-4D06-999A-B57F4BDF91FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37136762-C1EF-4D06-999A-B57F4BDF91FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37136762-C1EF-4D06-999A-B57F4BDF91FE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
