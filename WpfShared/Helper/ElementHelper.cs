@@ -1,6 +1,6 @@
 ﻿using System.Windows;
 
-namespace WpfBarrage
+namespace WpfShared.Helper
 {
     public class ElementHelper : DependencyObject
     {

@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfBarrage", "WpfBarrage\Wp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfPanning", "WpfPanning\WpfPanning.csproj", "{0C11E367-EF08-4811-99E7-493F8CA5C66C}"
 EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "WpfShared", "WpfShared\WpfShared.shproj", "{17521DB8-602D-43E0-94DB-FDD842C0DBBC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,5 +53,10 @@ Global
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AC0F14B4-A54F-4B91-B1AD-EC1853DCAF2E}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		WpfShared\WpfShared.projitems*{17521db8-602d-43e0-94db-fdd842c0dbbc}*SharedItemsImports = 13
+		WpfShared\WpfShared.projitems*{37136762-c1ef-4d06-999a-b57f4bdf91fe}*SharedItemsImports = 5
+		WpfShared\WpfShared.projitems*{cc864ca7-7a28-4fe5-bc88-dab955058bbc}*SharedItemsImports = 5
 	EndGlobalSection
 EndGlobal

@@ -14,4 +14,6 @@
     <Resource Include="Resources\111.jpg" />
   </ItemGroup>
 
+  <Import Project="..\WpfShared\WpfShared.projitems" Label="Shared" />
+
 </Project>

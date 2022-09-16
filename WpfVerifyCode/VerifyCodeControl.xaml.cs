@@ -10,6 +10,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using static WpfVerifyCode.DrawingContextHelper;
 
 namespace WpfVerifyCode
 {
@@ -25,7 +26,6 @@ namespace WpfVerifyCode
             DependencyProperty.Register("ImageSource", typeof(ImageSource), typeof(VerifyCodeControl),
                 new PropertyMetadata(new PropertyChangedCallback(OnVerifyCodeImageSourcePropertyChange)));
 
-        private Image _image;
         private Size _size = new Size(70, 23);
 
         [Obsolete("GetFormattedText")]
@@ -115,7 +115,7 @@ namespace WpfVerifyCode
             using (var dc = drawingVisual.RenderOpen())
             {
                 dc.DrawRectangle(Brushes.White, new Pen(Foreground, 1), new Rect(_size));
-                var formattedText = DrawingContextHelper.GetFormattedText(checkCode, Foreground,
+                var formattedText = GetFormattedText(checkCode, Foreground,
                     FlowDirection.LeftToRight, 20, FontWeights.Bold);
                 dc.DrawText(formattedText,
                     new Point((_size.Width - formattedText.Width) / 2, (_size.Height - formattedText.Height) / 2));

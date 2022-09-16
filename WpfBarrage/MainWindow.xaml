@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfBarrage"
+        xmlns:helper="clr-namespace:WpfShared.Helper"
         mc:Ignorable="d"
         Title="MainWindow" Height="520" Width="860">
     <Grid>
@@ -20,9 +21,9 @@
                 <ColumnDefinition/>
                 <ColumnDefinition Width="Auto"/>
             </Grid.ColumnDefinitions>
-            <TextBox local:ElementHelper.IsWatermark="True"
+            <TextBox helper:ElementHelper.IsWatermark="True"
                      x:Name="TbBarrage"
-                     local:ElementHelper.Watermark="请弹幕内容"/>
+                     helper:ElementHelper.Watermark="请弹幕内容"/>
             <Button Grid.Column="1"
                     Content="发送" Margin="4,0,0,0" 
                     Click="ButtonBase_OnClick"/>
