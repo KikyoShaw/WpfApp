@@ -11,3 +11,6 @@
 
 #### WpfSongLrc - 歌词渐变滚动
 ![image](https://github.com/KikyoShaw/WpfApp/blob/master/GIF/WpfSongLrc.gif)
+
+#### WpfBarrage - 弹幕
+![image](https://github.com/KikyoShaw/WpfApp/blob/master/GIF/WpfBarrage.gif)
