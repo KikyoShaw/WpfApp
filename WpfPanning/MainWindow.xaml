@@ -10,20 +10,20 @@
         <TabControl>
             <TabItem Header="Horizontal">
                 <local:PanningItems>
-                    <Image Source="Resources/0.jpg"></Image>
-                    <Image Source="Resources/1.jpg"></Image>
-                    <Image Source="Resources/2.jpg"></Image>
-                    <Image Source="Resources/3.jpg"></Image>
-                    <Image Source="Resources/4.jpg"></Image>
+                    <Image Source="Resources/0.jpg"/>
+                    <Image Source="Resources/1.jpg"/>
+                    <Image Source="Resources/2.jpg"/>
+                    <Image Source="Resources/3.jpg"/>
+                    <Image Source="Resources/4.jpg"/>
                 </local:PanningItems>
             </TabItem>
             <TabItem Header="Vertical">
                 <local:PanningItems ScrollDirection="Vertical">
-                    <Image Source="Resources/0.jpg"></Image>
-                    <Image Source="Resources/1.jpg"></Image>
-                    <Image Source="Resources/2.jpg"></Image>
-                    <Image Source="Resources/3.jpg"></Image>
-                    <Image Source="Resources/4.jpg"></Image>
+                    <Image Source="Resources/0.jpg"/>
+                    <Image Source="Resources/1.jpg"/>
+                    <Image Source="Resources/2.jpg"/>
+                    <Image Source="Resources/3.jpg"/>
+                    <Image Source="Resources/4.jpg"/>
                 </local:PanningItems>
             </TabItem>
         </TabControl>
