@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfCarousel", "WpfCarousel\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfBanner", "WpfBanner\WpfBanner.csproj", "{ADB918A1-103A-4F4E-87CD-4CBB324E4F43}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfTurntable", "WpfTurntable\WpfTurntable.csproj", "{3684E821-754E-448B-85EC-5EADF27423B2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -71,6 +73,10 @@ Global
 		{ADB918A1-103A-4F4E-87CD-4CBB324E4F43}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ADB918A1-103A-4F4E-87CD-4CBB324E4F43}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ADB918A1-103A-4F4E-87CD-4CBB324E4F43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3684E821-754E-448B-85EC-5EADF27423B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3684E821-754E-448B-85EC-5EADF27423B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3684E821-754E-448B-85EC-5EADF27423B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3684E821-754E-448B-85EC-5EADF27423B2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
