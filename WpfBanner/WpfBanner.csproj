@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <Import Project="..\WpfShared\WpfShared.projitems" Label="Shared" />
+
+  <ItemGroup>
+    <None Remove="Resources\0.jpg" />
+    <None Remove="Resources\1.jpg" />
+    <None Remove="Resources\2.jpg" />
+    <None Remove="Resources\3.jpg" />
+    <None Remove="Resources\4.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\0.jpg" />
+    <Resource Include="Resources\1.jpg" />
+    <Resource Include="Resources\2.jpg" />
+    <Resource Include="Resources\3.jpg" />
+    <Resource Include="Resources\4.jpg" />
+  </ItemGroup>
+
+</Project>
