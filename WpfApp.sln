@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfTranstion", "WpfTranstio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfScrollViewer", "WpfScrollViewer\WpfScrollViewer.csproj", "{AD43FF59-0A67-4A57-9751-51594312F2F6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfCarousel", "WpfCarousel\WpfCarousel.csproj", "{F051678A-6049-49D5-93E5-DAD04DB9DF7C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -59,6 +61,10 @@ Global
 		{AD43FF59-0A67-4A57-9751-51594312F2F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD43FF59-0A67-4A57-9751-51594312F2F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD43FF59-0A67-4A57-9751-51594312F2F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F051678A-6049-49D5-93E5-DAD04DB9DF7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F051678A-6049-49D5-93E5-DAD04DB9DF7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F051678A-6049-49D5-93E5-DAD04DB9DF7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F051678A-6049-49D5-93E5-DAD04DB9DF7C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
