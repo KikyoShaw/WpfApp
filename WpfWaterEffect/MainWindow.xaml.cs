@@ -34,7 +34,7 @@ namespace WpfWaterEffect
 
         private void OnFrameChange(object sender, EventArgs e)
         {
-            Application.Current.Dispatcher.InvokeAsync(() =>
+            Application.Current?.Dispatcher?.InvokeAsync(() =>
             {
                 if (this.WaterControl.Value >= 100)
                 {
