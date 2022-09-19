@@ -1,0 +1,9 @@
+﻿<Application x:Class="WpfScreenCut.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:WpfScreenCut"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary Source="pack://application:,,,/WpfScreenCut;component/Theme/Theme.xaml"/>
+    </Application.Resources>
+</Application>

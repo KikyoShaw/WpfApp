@@ -9,7 +9,9 @@
     <Import_RootNamespace>WpfShared</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Helper\ControlsHelper.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Helper\DrawingContextHelper.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Helper\ElementHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helper\Win32ApiHelper.cs" />
   </ItemGroup>
 </Project>

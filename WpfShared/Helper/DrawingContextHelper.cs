@@ -4,7 +4,7 @@ using System.Linq;
 using System.Windows;
 using System.Windows.Media;
 
-namespace WpfVerifyCode
+namespace WpfShared.Helper
 {
     public static class DrawingContextHelper
     {

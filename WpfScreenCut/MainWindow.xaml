@@ -1,0 +1,16 @@
+﻿<Window x:Class="WpfScreenCut.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfScreenCut"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <UniformGrid Rows="2">
+        <CheckBox Content="截图时隐藏当前窗口" 
+                  VerticalAlignment="Bottom" HorizontalAlignment="Center"
+                  IsChecked="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:MainWindow}}, Path=IsChecked}"/>
+        <Button Content="截屏" VerticalAlignment="Top" HorizontalAlignment="Center" Click="Button_Click"
+                Margin="0,10"/>
+    </UniformGrid>
+</Window>
