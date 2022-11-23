@@ -4,6 +4,5 @@
              xmlns:local="clr-namespace:WpfScreenCut"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-        <ResourceDictionary Source="pack://application:,,,/WpfScreenCut;component/Theme/Theme.xaml"/>
     </Application.Resources>
 </Application>

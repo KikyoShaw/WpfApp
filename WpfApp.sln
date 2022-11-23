@@ -5,27 +5,31 @@ VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfWaterEffect", "WpfWaterEffect\WpfWaterEffect.csproj", "{FD208F5A-E1A1-4024-9E36-5396926ADA83}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfMoLayer", "WpfMoLayer\WpfMoLayer.csproj", "{B563BC4C-914D-4FC5-A979-9457CF99AA6F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfMoLayer", "WpfMoLayer\WpfMoLayer.csproj", "{B563BC4C-914D-4FC5-A979-9457CF99AA6F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfVerifyCode", "WpfVerifyCode\WpfVerifyCode.csproj", "{37136762-C1EF-4D06-999A-B57F4BDF91FE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfVerifyCode", "WpfVerifyCode\WpfVerifyCode.csproj", "{37136762-C1EF-4D06-999A-B57F4BDF91FE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfSongLrc", "WpfSongLrc\WpfSongLrc.csproj", "{71A0F671-8E57-45AD-A2B3-A9895B3102F2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfSongLrc", "WpfSongLrc\WpfSongLrc.csproj", "{71A0F671-8E57-45AD-A2B3-A9895B3102F2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfBarrage", "WpfBarrage\WpfBarrage.csproj", "{CC864CA7-7A28-4FE5-BC88-DAB955058BBC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfBarrage", "WpfBarrage\WpfBarrage.csproj", "{CC864CA7-7A28-4FE5-BC88-DAB955058BBC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfPanning", "WpfPanning\WpfPanning.csproj", "{0C11E367-EF08-4811-99E7-493F8CA5C66C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfPanning", "WpfPanning\WpfPanning.csproj", "{0C11E367-EF08-4811-99E7-493F8CA5C66C}"
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "WpfShared", "WpfShared\WpfShared.shproj", "{17521DB8-602D-43E0-94DB-FDD842C0DBBC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfTranstion", "WpfTranstion\WpfTranstion.csproj", "{55C06877-A3E3-4EA6-BE6B-3C245B7F4233}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfTranstion", "WpfTranstion\WpfTranstion.csproj", "{55C06877-A3E3-4EA6-BE6B-3C245B7F4233}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfScrollViewer", "WpfScrollViewer\WpfScrollViewer.csproj", "{AD43FF59-0A67-4A57-9751-51594312F2F6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfScrollViewer", "WpfScrollViewer\WpfScrollViewer.csproj", "{AD43FF59-0A67-4A57-9751-51594312F2F6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfCarousel", "WpfCarousel\WpfCarousel.csproj", "{F051678A-6049-49D5-93E5-DAD04DB9DF7C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfCarousel", "WpfCarousel\WpfCarousel.csproj", "{F051678A-6049-49D5-93E5-DAD04DB9DF7C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfBanner", "WpfBanner\WpfBanner.csproj", "{ADB918A1-103A-4F4E-87CD-4CBB324E4F43}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfBanner", "WpfBanner\WpfBanner.csproj", "{ADB918A1-103A-4F4E-87CD-4CBB324E4F43}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfTurntable", "WpfTurntable\WpfTurntable.csproj", "{3684E821-754E-448B-85EC-5EADF27423B2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfTurntable", "WpfTurntable\WpfTurntable.csproj", "{3684E821-754E-448B-85EC-5EADF27423B2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfScreenCut", "WpfScreenCut\WpfScreenCut.csproj", "{C15BB14A-DCD4-4E63-BFB0-98548DF50739}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfWinAero", "WpfWinAero\WpfWinAero.csproj", "{43C7225C-BE87-4FA4-BD94-7CD3D7E9640C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -77,6 +81,14 @@ Global
 		{3684E821-754E-448B-85EC-5EADF27423B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3684E821-754E-448B-85EC-5EADF27423B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3684E821-754E-448B-85EC-5EADF27423B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C15BB14A-DCD4-4E63-BFB0-98548DF50739}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C15BB14A-DCD4-4E63-BFB0-98548DF50739}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C15BB14A-DCD4-4E63-BFB0-98548DF50739}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C15BB14A-DCD4-4E63-BFB0-98548DF50739}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43C7225C-BE87-4FA4-BD94-7CD3D7E9640C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43C7225C-BE87-4FA4-BD94-7CD3D7E9640C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43C7225C-BE87-4FA4-BD94-7CD3D7E9640C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43C7225C-BE87-4FA4-BD94-7CD3D7E9640C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
