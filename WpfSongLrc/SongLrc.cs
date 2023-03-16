@@ -33,52 +33,59 @@ namespace WpfSongLrc
         public SongLrc()
         {
             NameScope.SetNameScope(this, new NameScope());
-            var gradientBrush = new LinearGradientBrush
+            var brush = new LinearGradientBrush
             {
                 EndPoint = new Point(1, 0.5),
                 StartPoint = new Point(0, 0.5)
             };
-            var stop1 = new GradientStop(Colors.White, 0);
-            var stop2 = new GradientStop(Colors.White, 1);
-            var stop3 = new GradientStop(Colors.Red, 1);
-            RegisterName("GradientStop1", stop1);
-            RegisterName("GradientStop2", stop2);
-            RegisterName("GradientStop3", stop3);
-            gradientBrush.GradientStops.Add(stop1);
-            gradientBrush.GradientStops.Add(stop2);
-            gradientBrush.GradientStops.Add(stop3);
-            Foreground = gradientBrush;
-            Loaded += (s, e) => { Animate(); };
+            var s1 = new GradientStop(Colors.Red, 0);
+            RegisterName("step1", s1);
+            brush.GradientStops.Add(s1);
+            var s2 = new GradientStop(Colors.Red, 1);
+            RegisterName("step2", s2);
+            brush.GradientStops.Add(s2);
+            var s3 = new GradientStop(Colors.White, 1);
+            RegisterName("step3", s3);
+            brush.GradientStops.Add(s3);
+            Foreground = brush;
+            Loaded += (s, e) => { StartAnimate(); };
         }
 
-        private void Animate()
+        private void StartAnimate()
         {
-            var storyboard = new Storyboard();
-            var animation1 = new DoubleAnimation
+            try
             {
-                From = 0,
-                To = 1,
-                Duration = Duration,
-                BeginTime = StartDuration
-            };
-            Storyboard.SetTargetName(animation1, "GradientStop2");
-            Storyboard.SetTargetProperty(animation1,
-                new PropertyPath(GradientStop.OffsetProperty));
+                var storyBoard = new Storyboard();
+                //当前选中歌词渲染跑马灯特效
+                var a1 = new DoubleAnimation
+                {
+                    From = 0,
+                    To = 1,
+                    Duration = Duration,
+                    BeginTime = StartDuration
+                };
+                Storyboard.SetTargetName(a1, "step2");
+                Storyboard.SetTargetProperty(a1, new PropertyPath(GradientStop.OffsetProperty));
+                storyBoard.Children.Add(a1);
 
-            var animation2 = new DoubleAnimation
+                //当前选中歌词底色
+                var a2 = new DoubleAnimation
+                {
+                    From = 0,
+                    To = 1,
+                    Duration = Duration,
+                    BeginTime = StartDuration
+                };
+                Storyboard.SetTargetName(a2, "step3");
+                Storyboard.SetTargetProperty(a2, new PropertyPath(GradientStop.OffsetProperty));
+                storyBoard.Children.Add(a2);
+                storyBoard.Begin(this);
+            }
+            catch /*(Exception ex)*/
             {
-                From = 0,
-                To = 1,
-                Duration = Duration,
-                BeginTime = StartDuration
-            };
-            Storyboard.SetTargetName(animation2, "GradientStop3");
-            Storyboard.SetTargetProperty(animation2,
-                new PropertyPath(GradientStop.OffsetProperty));
-
-            storyboard.Children.Add(animation1);
-            storyboard.Children.Add(animation2);
-            storyboard.Begin(this);
+                //Console.WriteLine(e);
+                //throw;
+            }
         }
     }
 }

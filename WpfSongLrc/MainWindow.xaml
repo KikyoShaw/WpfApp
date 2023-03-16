@@ -12,7 +12,8 @@
             <ImageBrush ImageSource="Resources/bg.png" Stretch="Fill"/>
         </Grid.Background>
         <StackPanel HorizontalAlignment="Center" Margin="0 10 0 10">
-            <TextBlock Text="兰亭序" HorizontalAlignment="Center" FontSize="20" Margin="0,10" Foreground="White"/>
+            <Button Height="45" Width="100" Content="演奏" Margin="10" Click="ButtonBase_OnClick"></Button>
+            <TextBlock Text="兰亭序" HorizontalAlignment="Center" FontSize="20" Margin="0,10" Foreground="Red"/>
             <ItemsControl ItemsSource="{Binding MusicWordArray,RelativeSource={RelativeSource AncestorType=local:MainWindow}}">
                 <ItemsControl.ItemTemplate>
                     <DataTemplate>

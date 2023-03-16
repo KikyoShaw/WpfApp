@@ -59,5 +59,10 @@ namespace WpfSongLrc
             };
             MusicWordArray = musicWords;
         }
+
+        private void ButtonBase_OnClick(object sender, RoutedEventArgs e)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

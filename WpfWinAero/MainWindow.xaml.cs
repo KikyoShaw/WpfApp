@@ -28,9 +28,34 @@ namespace WpfWinAero
             InitializeComponent();
 
             WindowBlur.SetIsEnabled(this, true);
-            //windowMain = this;
+           // windowMain = this;
             ////刷新窗口前景色
-            //UpdateUi();
+           // UpdateUi();
+            test();
+        }
+
+        private int num = 10;
+        private bool result = false;
+
+        private void test()
+        {
+            int temp = 0;
+            try
+            {
+                if (!result)
+                    return;
+                temp = 20;
+            }
+            catch /*(Exception e)*/
+            {
+                //Console.WriteLine(e);
+                //throw;
+            }
+            finally
+            {
+                num = temp;
+            }
+            
         }
 
         private void UpdateUi()
