@@ -36,5 +36,6 @@
             <Image Source="Resources/3.jpg"/>
             <Image Source="Resources/4.jpg"/>
         </local:Banner>
+        <!--<local:NewBanner></local:NewBanner>-->
     </Grid>
 </Window>

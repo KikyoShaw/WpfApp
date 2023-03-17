@@ -8,6 +8,6 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid Background="Black">
         <local:VerifyCodeControl x:Name="VerifyCodeControl" 
-                                 ImageHeight="40" ImageWidth="100" Foreground="LimeGreen"/>
+                                 ImageHeight="40" ImageWidth="160"/>
     </Grid>
 </Window>

@@ -20,8 +20,8 @@ namespace WpfMoLayer
     /// </summary>
     public partial class MainWindow : Window
     {
-        private PathGeometry _gridGeometry = new PathGeometry();
-        private bool _isDown = false;
+        private PathGeometry _geometry = new PathGeometry();
+        private bool _bDown = false;
 
         //初始值
         private readonly double _originArea;
@@ -31,24 +31,31 @@ namespace WpfMoLayer
         {
             InitializeComponent();
 
-            RectangleGeometry rg = new RectangleGeometry();
-            rg.Rect = new Rect(0, 0, this.Width, this.Height);
-            _gridGeometry = Geometry.Combine(_gridGeometry, rg, GeometryCombineMode.Union, null);
-            GridShadow.Clip = _gridGeometry;
-            _originArea = _gridGeometry.GetArea();
+            //绘制蒙层
+            RectangleGeometry g = new RectangleGeometry
+            {
+                Rect = new Rect(0, 0, this.Width, this.Height)
+            };
+            //组合几何图形合并
+            _geometry = Geometry.Combine(_geometry, g, GeometryCombineMode.Union, null);
+            GridShadow.Clip = _geometry;
+            //_originArea = _geometry.GetArea();
         }
 
         private void UserControl_MouseMove(object sender, MouseEventArgs e)
         {
-            if (_isDown)
+            if (_bDown)
             {
-                EllipseGeometry rg = new EllipseGeometry();
-                rg.Center = e.GetPosition(GridShadow);
-                rg.RadiusX = 20;
-                rg.RadiusY = 20;
-                //排除几何图形
-                _gridGeometry = Geometry.Combine(_gridGeometry, rg, GeometryCombineMode.Exclude, null);
-                GridShadow.Clip = _gridGeometry;
+                //鼠标滑动刮开区域大小
+                EllipseGeometry g = new EllipseGeometry
+                {
+                    Center = e.GetPosition(GridShadow),
+                    RadiusX = 20,
+                    RadiusY = 20
+                };
+                //绘组合几何图形排除
+                _geometry = Geometry.Combine(_geometry, g, GeometryCombineMode.Exclude, null);
+                GridShadow.Clip = _geometry;
 
                 //var currentArea = _gridGeometry.GetArea();
                 //if ((currentArea * 100 / _originArea) < 50 && !_bShowResult)
@@ -61,12 +68,12 @@ namespace WpfMoLayer
 
         private void UserControl_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            _isDown = true;
+            _bDown = true;
         }
 
         private void UserControl_MouseUp(object sender, MouseButtonEventArgs e)
         {
-            _isDown = false;
+            _bDown = false;
         }
     }
 }
