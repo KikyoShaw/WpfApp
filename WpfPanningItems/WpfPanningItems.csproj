@@ -7,11 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Resources\0.jpg" />
-    <None Remove="Resources\1.jpg" />
-    <None Remove="Resources\2.jpg" />
-    <None Remove="Resources\3.jpg" />
-    <None Remove="Resources\4.jpg" />
+    <PackageReference Include="MvvmLight" Version="5.4.1.1" />
   </ItemGroup>
 
   <ItemGroup>

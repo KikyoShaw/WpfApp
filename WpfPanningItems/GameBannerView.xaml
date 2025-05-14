@@ -1,0 +1,74 @@
+﻿<UserControl x:Class="WpfPanningItems.GameBannerView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WpfPanningItems"
+             mc:Ignorable="d" IsVisibleChanged="GameBannerView_OnIsVisibleChanged">
+
+    <UserControl.Resources>
+        <!--向左箭头-->
+        <DrawingImage x:Key="LeftIcon">
+            <DrawingImage.Drawing>
+                <DrawingGroup ClipGeometry="M0,0 V20 H20 V0 H0 Z">
+                    <DrawingGroup Opacity="1">
+                        <DrawingGroup Opacity="1">
+                            <GeometryDrawing Geometry="F0 M20,20z M0,0z M12.5,5.64773L12.5,3.10215 6.2386,9.36355 5.6022,9.99995 6.2386,10.6363 12.5,16.8977 12.5,14.3522 8.14778,9.99995 12.5,5.64773z">
+                                <GeometryDrawing.Brush>
+                                    <SolidColorBrush Color="#FFFFFFFF" Opacity="0.7" />
+                                </GeometryDrawing.Brush>
+                            </GeometryDrawing>
+                        </DrawingGroup>
+                    </DrawingGroup>
+                </DrawingGroup>
+            </DrawingImage.Drawing>
+        </DrawingImage>
+        <!--向右箭头-->
+        <DrawingImage x:Key="RightIcon">
+            <DrawingImage.Drawing>
+                <DrawingGroup ClipGeometry="M0,0 V20 H20 V0 H0 Z">
+                    <DrawingGroup Opacity="1">
+                        <DrawingGroup Opacity="1">
+                            <GeometryDrawing Geometry="F0 M20,20z M0,0z M7.5,5.64773L7.5,3.10215 13.7614,9.36355 14.3978,9.99995 13.7614,10.6363 7.5,16.8977 7.5,14.3522 11.8522,9.99995 7.5,5.64773z">
+                                <GeometryDrawing.Brush>
+                                    <SolidColorBrush Color="#FFFFFFFF" Opacity="0.7" />
+                                </GeometryDrawing.Brush>
+                            </GeometryDrawing>
+                        </DrawingGroup>
+                    </DrawingGroup>
+                </DrawingGroup>
+            </DrawingImage.Drawing>
+        </DrawingImage>
+    </UserControl.Resources>
+
+    <Grid Margin="10" ClipToBounds="True" MouseEnter="Grid_MouseEnter" MouseLeave="Grid_MouseLeave" Cursor="Hand" Height="{Binding GameBannerHeight}" Width="{Binding GameBannerWidth}"> 
+        <!--素材显示区域-->
+        <local:ClippingBorder x:Name="OrgActCard" BorderRadius="4" ClipToBounds="True" Height="{Binding GameBannerHeight}" Width="{Binding GameBannerWidth}">
+            <Image x:Name="OrgActImg" Stretch="UniformToFill" RenderOptions.BitmapScalingMode="HighQuality" />
+        </local:ClippingBorder>
+        <local:ClippingBorder x:Name="CurActCard" BorderRadius="4" ClipToBounds="True" Height="{Binding GameBannerHeight}" Width="{Binding GameBannerWidth}">
+            <Image x:Name="CurActImg" Stretch="UniformToFill" RenderOptions.BitmapScalingMode="HighQuality" />
+        </local:ClippingBorder>
+        <!--按钮区域-->
+        <Grid x:Name="ActInteraction" Visibility="Collapsed" Margin="4">
+            <Border CornerRadius="4" Width="28" Height="28"  Background="#80000000" HorizontalAlignment="Left" VerticalAlignment="Center"
+                    PreviewMouseLeftButtonDown="LeftIcon_PreviewMouseLeftButtonDown">
+                <Image Width="28" Height="28" Source="{StaticResource LeftIcon}"/>
+            </Border>
+            <Border CornerRadius="4"  Width="28" Height="28"  Background="#80000000" HorizontalAlignment="Right" VerticalAlignment="Center"
+                    PreviewMouseLeftButtonDown="RightIcon_PreviewMouseLeftButtonDown">
+                <Image Width="28" Height="28" Source="{StaticResource RightIcon}"/>
+            </Border>
+        </Grid>
+        <!--轮播圆点-->
+        <StackPanel x:Name="DotIndicatorPanel"
+                    Orientation="Horizontal"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Bottom"
+                    Margin="0,0,0,8"
+                    IsHitTestVisible="True"
+                    Panel.ZIndex="99">
+        </StackPanel>
+    </Grid>
+
+</UserControl>
