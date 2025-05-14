@@ -1,0 +1,81 @@
+﻿<UserControl x:Class="WpfPanningItems.PanningItemsView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WpfPanningItems"
+             mc:Ignorable="d" Loaded="PanningItemsView_Loaded"
+             d:DesignHeight="450" d:DesignWidth="800">
+
+    <UserControl.Resources>
+        <LinearGradientBrush x:Key="EllipseFill" StartPoint="0,0" EndPoint="0,1">
+            <GradientStop Offset="0" Color="LightGreen"/>
+            <GradientStop Offset="0.5" Color="DarkGreen"/>
+            <GradientStop Offset="1" Color="LightGreen"/>
+        </LinearGradientBrush>
+        <LinearGradientBrush x:Key="EllipseUnFill" StartPoint="0,0" EndPoint="0,1">
+            <GradientStop Offset="0" Color="#dfdfdf"/>
+            <GradientStop Offset="0.5" Color="Gray"/>
+            <GradientStop Offset="1" Color="#fdfdfd"/>
+        </LinearGradientBrush>
+
+        <Style x:Key="RbtnStyle" TargetType="RadioButton">
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="Width" Value="50"/>
+            <Setter Property="Height" Value="50"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="RadioButton">
+                        <Grid>
+                            <Ellipse Width="{TemplateBinding Width}" Height="{TemplateBinding Height}" Fill="{StaticResource EllipseUnFill}"/>
+                            <Ellipse x:Name="ellipse" Width="{TemplateBinding Width}" Height="{TemplateBinding Height}" Fill="{StaticResource EllipseFill}" Opacity="0"/>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsChecked" Value="true">
+                                <Trigger.EnterActions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimation Storyboard.TargetProperty="(UIElement.Opacity)"
+                                                  Storyboard.TargetName="ellipse"
+                                                  Duration="0:0:0.5" From="0" To="1" />
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </Trigger.EnterActions>
+                                <Trigger.ExitActions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimation Storyboard.TargetProperty="(UIElement.Opacity)"
+                                                  Storyboard.TargetName="ellipse"
+                                                  Duration="0:0:0.5" From="1" To="0" />
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </Trigger.ExitActions>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+    </UserControl.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="500"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid x:Name="ImageGrid" ClipToBounds="True" SizeChanged="ImageGrid_OnSizeChanged">
+            <local:CanvasWithPhoto x:Name="PhotoCanvas" IndexChanged="CanvasWithPhoto_IndexChanged">
+                <Image Source="Resources/0.jpg" Stretch="Uniform"/>
+                <Image Source="Resources/1.jpg" Stretch="Uniform"/>
+                <Image Source="Resources/2.jpg" Stretch="Uniform"/>
+                <Image Source="Resources/3.jpg" Stretch="Uniform"/>
+                <Image Source="Resources/4.jpg" Stretch="Uniform"/>
+            </local:CanvasWithPhoto>
+        </Grid>
+        <StackPanel x:Name="RbtnPanel" Grid.Row="1" RadioButton.Checked="RbtnPanel_Checked"
+                    HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal">
+        </StackPanel>
+    </Grid>
+
+</UserControl>
